@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true"
+          android:drawable="@drawable/utils_press" />
+    <!-- pressed 按下-->
+    <item android:state_focused="true"
+          android:drawable="@drawable/utils_press" />
+    <!-- focused 获取焦点-->
+    <item android:state_hovered="true"
+          android:drawable="@drawable/utils_press" />
+    <!-- hovered 悬停-->
+    <item android:drawable="@drawable/utils" />
+    <!-- default 默认-->
+</selector>

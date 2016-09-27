@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/textWrite"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <TextView
+        style="@style/activity_title_bar"
+        android:background="@color/taskblue"
+        android:text="进程管理"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_running_process"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:text="运行中进程:"
+            android:textColor="@color/text_brack_color"/>
+
+        <TextView
+            android:id="@+id/tv_memory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:text="可用/总内存:"
+            android:textColor="@color/text_brack_color"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/lv_tasks"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+        </ListView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/allselected"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/selector_task_buttom"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:onClick="click_allselected"
+                    android:text="全选"
+                    android:textColor="@color/text_brack_color"/>
+
+                <Button
+                    android:id="@+id/cancle"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/selector_task_buttom"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:onClick="click_cancle"
+                    android:text="取消"
+                    android:textColor="@color/text_brack_color"/>
+
+                <Button
+                    android:id="@+id/clean"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/selector_task_buttom"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:onClick="click_clean"
+                    android:text="清理"
+                    android:textColor="@color/text_brack_color"/>
+
+                <Button
+                    android:id="@+id/setting"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/selector_task_buttom"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:onClick="click_setting"
+                    android:text="设置"
+                    android:textColor="@color/text_brack_color"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_pb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ProgressBar
+                android:id="@+id/task_pb"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/task_pb"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="正在加载进程列表"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_task_lable"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff888888"
+            android:text="进程类型:N个"
+            android:textColor="@android:color/white"/>
+
+    </FrameLayout>
+</LinearLayout>

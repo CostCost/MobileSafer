@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:background="@color/textWrite"
+              android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="返回主界面"
+        android:textSize="@dimen/soft_title_text_size"
+        android:background="@color/pictureblue"
+        android:textColor="@color/textWrite"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+       android:paddingLeft="10dp"
+        android:gravity="center_vertical|left"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:text="你还没有点击设置完成\n是否返回主界面"
+        android:textSize="@dimen/soft_title_text_size"
+        android:background="@color/textWrite"
+        android:textColor="@color/text_brack_color"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical|left"/>
+
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#656965"
+        ></View>
+   <LinearLayout
+       android:layout_marginTop="15dp"
+       android:layout_marginBottom="7dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:paddingLeft="15dp"
+       android:paddingRight="15dp">
+       <Button
+           android:id="@+id/bt_dialog_cancel"
+           android:layout_width="80dp"
+           android:textColor="@color/text_brack_color"
+           android:layout_height="wrap_content"
+           android:text="取消"/>
+       <Button
+           android:alpha="0"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1.0" />
+       <Button
+           android:id="@+id/bt_dialog_commit"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="@color/text_brack_color"
+           android:text="返回主界面"/>
+   </LinearLayout>
+</LinearLayout>

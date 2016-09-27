@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/textWrite"
+    >
+    <com.example.yuxin.mobilesafer.ui.MySlidingMenu
+        android:id="@+id/slidingmenu"
+        android:layout_width="wrap_content"
+        android:background="#00000000"
+        android:layout_height="match_parent"
+        >
+        <include
+            android:id="@+id/menu"
+            layout="@layout/left_menu"
+            />
+        <include
+            android:id="@+id/content"
+            layout="@layout/content"
+            />
+    </com.example.yuxin.mobilesafer.ui.MySlidingMenu>
+
+</RelativeLayout>

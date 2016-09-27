@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:fitsSystemWindows="true"
+              android:background="#00000000"
+              android:orientation="vertical">
+    <TextView
+        android:id="@+id/left_title"
+        style="@style/activity_title_bar"
+        android:background="#4cbdfe"
+        android:text="流量统计"/>
+
+    <ListView
+        android:id="@+id/menu_listview"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#f8f8f8"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:scrollbars="vertical">
+    </ListView>
+</LinearLayout>

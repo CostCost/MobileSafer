@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:fitsSystemWindows="true"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+<RelativeLayout
+    android:id="@+id/rl_cache"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        style="@style/activity_title_bar"
+        android:background="@color/titlegreen"
+        android:text="缓存清理"/>
+    <Button
+        android:id="@+id/bt_cache_clean"
+        android:text="一键清理"
+        android:layout_width="80dp"
+        style="@style/titlebuttom"
+        android:background="@drawable/selector_cache_buttom"
+        />
+</RelativeLayout>
+    <ListView
+        android:layout_below="@id/rl_cache"
+        android:id="@+id/lv_cache"
+        android:background="@color/textWrite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="#00000000"
+        ></ListView>
+    <RelativeLayout
+        android:id="@+id/rl_pbandtv"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+    <ProgressBar
+        android:id="@+id/cache_pb"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+        <TextView
+            android:layout_below="@id/cache_pb"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="正在加载缓存信息"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/textWrite"
+              android:fitsSystemWindows="true"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView
+        style="@style/activity_title_bar"
+        android:background="@color/pictureblue"
+        android:text="@string/main_title_name"/>
+    <com.example.yuxin.mobilesafer.ui.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/textWrite"
+        android:text="@string/mian_under_title_line"
+        android:focusable="true"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        />
+    <GridView
+        android:id="@+id/gv"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/textWrite"
+        android:numColumns="3"
+        ></GridView>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="textWrite">#F8F8F8</color>
+    <color name="pictureblue">#8499FB</color>
+    <color name="softgreen">#19D185</color>
+    <color name="taskblue">#859AFB</color>
+    <color name="titlegreen">#A6D506</color>
+    <color name="viewpagetabline">#FF6C78B3</color>
+    <color name="soft_title_text_color">#5c685c</color>
+    <color name="setting_title_color">#915bab</color>
+    <color name="tools_title_color">#4CBDFE</color>
+    <color name="text_brack_color">#6b6262</color>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:fitsSystemWindows="true"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        style="@style/activity_title_bar"
+        android:background="@color/titlegreen"
+        android:text="通讯卫士"/>
+    <Button
+        android:id="@+id/bt_title_add"
+        android:text="添加"
+        style="@style/titlebuttom"
+        />
+</RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_sms_safe"
+        android:background="@color/textWrite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="#00000000"
+        ></ListView>
+
+</LinearLayout>

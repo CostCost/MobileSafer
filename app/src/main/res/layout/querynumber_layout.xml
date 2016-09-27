@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:fitsSystemWindows="true"
+              android:background="@color/textWrite"
+              android:orientation="vertical">
+
+    <TextView
+        style="@style/activity_title_bar"
+        android:background="@color/tools_title_color"
+        android:text="@string/querynumber_title"/>
+
+    <EditText
+        android:id="@+id/et_query_number"
+        android:inputType="phone"
+        android:hint="请输入要查询的号码"
+        style="@style/querynumber_comp"/>
+    <Button
+        android:id="@+id/bt_query_number"
+        style="@style/querynumber_comp"
+        android:layout_width="80dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="查询"/>
+    <TextView
+        android:id="@+id/tv_query_result"
+        style="@style/querynumber_comp"
+        android:layout_marginLeft="10dp"
+        android:textSize="18sp"
+        />
+
+
+</LinearLayout>
