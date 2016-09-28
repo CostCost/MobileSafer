@@ -1,4 +1,8 @@
 #MobileSafer
+
+点击查看格式良好的README:[http://blog.csdn.net/DayDayPlayPhone/article/details/52690990](http://blog.csdn.net/DayDayPlayPhone/article/details/52690990)
+
+
 手机安全卫士,主要分九个模块"手机防盗","通讯卫士","软件管理","进程管理","流量管理","手机杀毒","缓存清理","高级工具","设置中心"下面是各个模块的介绍:
 
  - 启动界面
